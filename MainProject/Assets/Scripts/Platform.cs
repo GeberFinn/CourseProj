@@ -23,10 +23,12 @@ public class Platform : MonoBehaviour {
             if (gameObject.tag == "DangPlatform")
             {
                 Vector2 velocity = rb.velocity;
-                velocity.y = 0f;
-                rb.velocity = velocity;
+
                 Player pl = collision.gameObject.GetComponent<Player>();
                 pl.movementSpeed = 0f;
+                velocity.y = 5f;
+                rb.velocity = velocity;
+                collision.collider.enabled = false;
             }
         }
 
