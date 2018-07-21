@@ -5,13 +5,15 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     Rigidbody2D rb;
-    public float movementSpeed =10f;
+    public float movementSpeed ;
 
     float movement = 0f;
 
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
-	}
+        movementSpeed = 10f;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
