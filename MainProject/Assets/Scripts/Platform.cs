@@ -29,6 +29,8 @@ public class Platform : MonoBehaviour {
                 velocity.y = 5f;
                 rb.velocity = velocity;
                 collision.collider.enabled = false;
+                
+                
             }
         }
 
