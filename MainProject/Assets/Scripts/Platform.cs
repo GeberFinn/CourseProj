@@ -5,7 +5,21 @@ using UnityEngine;
 public class Platform : MonoBehaviour {
 
     // Use this for initialization
+    public GameObject Player;
+    
+
     public float jumpForce = 10f;
+
+    private void Start()
+    {
+        
+        
+    }
+
+    private void FixedUpdate()
+    {
+        
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -35,4 +49,5 @@ public class Platform : MonoBehaviour {
         }
 
     }
+
 }
