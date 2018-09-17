@@ -11,7 +11,7 @@ public class CheckPlayer : MonoBehaviour {
 
 
     void Start () {
-        p = p.GetComponent<RoomManager>();
+       
 	}
 
     // Update is called once per frame
@@ -19,8 +19,7 @@ public class CheckPlayer : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
-            p.curRoom = nRoom;
-            p.nextRoom = true;
+            
         }
     }
 }
